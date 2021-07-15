@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<title>Sum and Percentage calculation</title>
+<h1>Enter The Marks of a student of </h1>
+Subject 1 <input id=t1 /> <br>
+Subject 2 <input id=t2 /> <br>
+Subject 3 <input id=t3 /> <br>
+Subject 4 <input id=t4 /> <br>
+Subject 5 <input id=t5 /> <br>
+<input type=button value=Calculate onclick="Total()" /> <br>
+<strong>
+</output id=out1 />
+</strong>
+<script>
+function Total()
+{
+a=parseInt(t1.value);
+b=parseInt(t2.value);
+c=parseInt(t3.value);
+d=parseInt(t4.value);
+e=parseInt(t5.value);
+s=a+b+c+d+e;
+p=s/5;
+out1.value='Total marks of Student is:   ' + s +'   & Percentage :    ' + p +' %'
+}
+</script>
+</html>
+</html>

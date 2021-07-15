@@ -1,0 +1,34 @@
+<style>
+    .screen { height:60px;width:390px; font-size:45;color:red;text-align:right }
+    .btn { height:50px;width:160px; font-size:30px;color:red;allign:center }
+    .btn2 {font-size:25px}
+    .btn:hover {color:blue}
+    </style>
+    
+    <html>
+    <center>
+    <title>Largest b/w 3 NO.s</title>
+    <heading>
+    <h1 >
+    <font-size:7>Comparision of three No.s</strong>
+    </font-size:7></h1></heading>
+    <table border=2.5 >
+    <tr ><th>Number 1  </th><td><input type="Number" id="first" class="screen" ></td> </tr>
+    <tr > <th>Number 2  </th><td><input type="Number" id="second"  class="screen" ></td></tr>
+    <tr > <th>Number 3  </th><td><input type="Number" id="third" class="screen" ></td></tr>
+    <tr><td></td><td colspan=2><input type="button"value="ANS" class="btn"onclick="compare()" </td></tr>
+    <output id=out class="screen" />
+    </html>
+    
+    <script>
+    function compare()
+    {
+    a=parseInt(first.value);
+    b=parseInt(second.value);
+    c=parseInt(third.value);
+    if(a>b&&a>c)d=a
+    else if(b>a&&b>c )d=b
+    else  d=c
+    out.value="The Largest No. among "+a+"  ,  "+b+"  ,  "+c+"  is "+d 
+    }
+    </script>
